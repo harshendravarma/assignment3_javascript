@@ -1,0 +1,18 @@
+function func1(a) {
+
+    var sum = a
+  
+    function func2(b) {
+      sum += b
+      return func2
+    }
+  
+    func2.toString = function() { return sum }
+  
+    return func2
+  }
+  
+  console.log( func1(1)(2) ) 
+  console.log( func1(1)(2)(3) )  
+  console.log( func1(1)(2)(3)(4) )  
+  
