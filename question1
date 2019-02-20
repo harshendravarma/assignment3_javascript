@@ -1,0 +1,8 @@
+function sum(){
+var total_sum=0;
+    for(var i=0;i<arguments.length;i++){
+        total_sum=total_sum+arguments[i];
+    }
+    console.log(total_sum);
+}
+sum(10,20,30,40);
